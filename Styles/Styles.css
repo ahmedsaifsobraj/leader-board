@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #562EFF;
+}
+
+.web-title {
+    color: white;
+    font-size: 25px;
+}
+
+.header-items,
+.sites {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links p a {
+    display: inline;
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.links {
+    display: flex;
+
+}
+
+.fa-regular.lg {
+    color: white;
+    font-size: 40px;
+}
+
+/* top players style */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hc {
+    background-color: #562EFF;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+}
+
+hr {
+    margin-bottom: 27px;
+}
+
+/* top-blogs */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-authors {
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+.blog-authors a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* courses styles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.course {
+    width: 255px;
+    height: 270px;
+    padding-right: 15px;
+}
+
+.course-name {
+    font-size: 20px;
+}
+
+.instructor {
+    font-size: 14px;
+    color: red;
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-solid {
+    font-size: 12px;
+}
+
+.fa-solid.filled {
+    color: #FFC014;
+}
+
+.fa-solid.empty {
+    color: lightgray;
+}
+
+.rating {
+    font-size: 12px;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 6px;
+    color: #FF4A60;
+
+}
+
+/* .fa-regular.fa-clock.clock {
+    color: #FF4A60;
+} */
+
+
+/* ---------------
+Media Queries
+------------------*/
+@media only screen and (max-width:688px) {
+    .container {
+        width: 80%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 80%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
